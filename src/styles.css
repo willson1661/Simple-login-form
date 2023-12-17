@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+body {
+  background-image: linear-gradient(to left, #a802e0, #f7676a);
+  user-select: none;
+}
+
+.eye {
+  color: #6e6666;
+  place-content: center;
+  display: flex;
+  position: relative;
+  left: -46px;
+  top: -16px;
+  float: right;
+}
+.t_1111 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.submit {
+  outline: none;
+  background: #e54f86;
+  width: 7rem;
+  height: 2rem;
+  margin: -20px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 117px;
+  color: #fff;
+}
+
+.App {
+  min-height: 100vh;
+  width: 85vw;
+  max-width: 1900px;
+  margin: 0rem auto;
+}
+body {
+  
+}
+
+.cards {
+  height: 100vh;
+
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+  place-content: center;
+  filter: drop-shadow(1px 3px 11px #fff);
+}
+.container {
+  width: 21rem;
+  height: 26rem;
+  background: #fff;
+  border-radius: 12px;
+}
+.headtext {
+  font-size: 19px;
+  line-height: 32px;
+  width: 71px;
+  margin-top: 7px;
+  color: purple;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+.underlinee {
+  width: 36px;
+  height: 3px;
+  background: purple;
+  border-radius: 10px;
+}
+input {
+  outline: none;
+  background: #f1d4db;
+  width: 17rem;
+  height: 2rem;
+  margin: 17px 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 19px;
+  top: 24px;
+  position: relative;
+}
+.login {
+  outline: none;
+  background: #f1d4db;
+  width: 7rem;
+  height: 2rem;
+  margin: 21px 32px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+}
+
+.login_1 {
+  outline: none;
+  background: #f1d4db;
+  width: 7rem;
+  height: 2rem;
+  margin: 74px 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login11:hover {
+  background-color: #f3626f;
+  cursor: pointer;
+}
+.login:hover {
+  background-color: #f3626f;
+  cursor: pointer;
+}
+
+.login11 {
+  outline: none;
+  /* background: #f1d4db; */
+  width: 7rem;
+  height: 2rem;
+  margin: -311px -147px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  top: -26px;
+  position: relative;
+  left: 148px;
+  display: none;
+}
+.login1 {
+  outline: none;
+  background: #e54f86;
+  width: 7rem;
+  height: 2rem;
+  margin: 48px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  top: 98px;
+  margin-left: 29px;
+}
+.gray {
+  color: #6e6666;
+  background-color: #f2dbf4 !important;
+}
+.login111 {
+  outline: none;
+  background: #e54f86;
+  width: 7rem;
+  height: 2rem;
+  margin: -20px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  margin-left: 39px;
+}
+
+/* 
+Screen larger than 600px? 2 column */
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 900px) {
+  .cards {
+    width: 95%;
+
+    margin-left: 7px;
+
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 0fr);
+  }
+  input {
+    left: 0px;
+  }
+
+  body {
+   
+    background: #f3626f;
+  }
+}
+
+@media (max-width: 600px) {
+  .submit {
+    outline: none;
+    background: #5d81b7;
+    width: 7rem;
+    height: 2rem;
+    margin: -20px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 117px;
+    color: #fff;
+  }
+  .cards {
+    max-width: 1200px;
+
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 0fr);
+  }
+  body {
+
+    background: #5d81b7 !important;
+  }
+  .login1,
+  .login111 {
+    outline: none;
+    background: #5d81b7;
+    margin-left: 34px;
+  }
+  input {
+    background: #ebebeb;
+  }
+  .gray {
+    background: #ebebeb !important;
+  }
+}
+
+
+@media (max-height: 500px) {
+ 
+    .cards {
+      margin: 6rem 0rem;
+
+  }
+}
