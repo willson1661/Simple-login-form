@@ -102,7 +102,36 @@ input {
   margin-top: 19px;
   top: 24px;
   position: relative;
+
+  
 }
+
+input:user-invalid {
+  border: 2px solid red;
+}
+
+input:user-invalid+.t1::before {
+content: "✖";
+  color: red;
+  float: right;
+  margin-top: -23px;
+  position: relative;
+  left: -12px;
+}
+input:user-valid {
+  border: 2px solid rgb(43, 255, 0);
+}
+
+input:user-valid+.t1::before {
+  content: "✓";
+  color: rgb(43, 255, 0);
+  float: right;
+    margin-top: -23px;
+    position: relative;
+    left: -12px;
+}
+
+
 .login {
   outline: none;
   background: #f1d4db;
